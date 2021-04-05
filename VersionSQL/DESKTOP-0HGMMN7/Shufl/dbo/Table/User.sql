@@ -1,4 +1,4 @@
-/****** Object:  Table [dbo].[User]    Committed by VersionSQL https://www.versionsql.com ******/
+﻿/****** Object:  Table [dbo].[User]    Committed by VersionSQL https://www.versionsql.com ******/
 
 SET ANSI_NULLS ON
 SET QUOTED_IDENTIFIER ON
@@ -11,6 +11,7 @@ CREATE TABLE [dbo].[User](
 	[LastName] [varchar](150) NOT NULL,
 	[PictureUrl] [varchar](150) NOT NULL,
 	[Password] [char](60) NOT NULL,
+	[UserSecret] [char](344) NULL,
 	[IsVerified] [bit] NOT NULL,
 	[IsAdmin] [bit] NOT NULL,
 	[SpotifyToken] [varchar](264) NULL,
