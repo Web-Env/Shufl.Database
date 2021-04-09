@@ -1,4 +1,4 @@
-/****** Object:  Table [dbo].[GroupSuggestionRating]    Committed by VersionSQL https://www.versionsql.com ******/
+﻿/****** Object:  Table [dbo].[GroupSuggestionRating]    Committed by VersionSQL https://www.versionsql.com ******/
 
 SET ANSI_NULLS ON
 SET QUOTED_IDENTIFIER ON
@@ -6,11 +6,11 @@ CREATE TABLE [dbo].[GroupSuggestionRating](
 	[Id] [uniqueidentifier] NOT NULL,
 	[GroupSuggestionId] [uniqueidentifier] NOT NULL,
 	[OverallRating] [decimal](3, 1) NOT NULL,
-	[LyricsRating] [decimal](3, 1) NOT NULL,
-	[VocalsRating] [decimal](3, 1) NOT NULL,
-	[InstrumentalsRating] [decimal](3, 1) NOT NULL,
-	[CompositionRating] [decimal](3, 1) NOT NULL,
-	[Comment] [nvarchar](1500) NOT NULL,
+	[LyricsRating] [decimal](3, 1) NULL,
+	[VocalsRating] [decimal](3, 1) NULL,
+	[InstrumentalsRating] [decimal](3, 1) NULL,
+	[CompositionRating] [decimal](3, 1) NULL,
+	[Comment] [nvarchar](1500) NULL,
 	[CreatedOn] [datetime] NOT NULL,
 	[CreatedBy] [uniqueidentifier] NOT NULL,
 	[LastUpdatedOn] [datetime] NOT NULL,
