@@ -14,7 +14,7 @@ CREATE TABLE [dbo].[User](
 	[UserSecret] [char](344) NOT NULL,
 	[IsVerified] [bit] NOT NULL,
 	[IsAdmin] [bit] NOT NULL,
-	[SpotifyToken] [varchar](264) NULL,
+	[SpotifyToken] [char](344) NULL,
 	[SpotifyUsername] [varchar](100) NULL,
 	[SpotifyUrl] [varchar](150) NULL,
 	[SpotifyMarket] [char](2) NULL,
