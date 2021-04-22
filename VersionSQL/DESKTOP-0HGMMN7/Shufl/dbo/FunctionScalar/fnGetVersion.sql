@@ -5,11 +5,11 @@
 -- Create date: 17/04/2021
 -- Description:	Function to return version number
 -- =============================================
-CREATE FUNCTION fnGetVersion ()
+CREATE FUNCTION [dbo].[fnGetVersion] ()
 RETURNS varchar
 AS
 BEGIN
 
-	RETURN '1.1.0'
+	RETURN '1.2.0'
 
 END
