@@ -9,7 +9,7 @@ CREATE TABLE [dbo].[GroupSuggestionRating](
 	[LyricsRating] [decimal](3, 1) NULL,
 	[VocalsRating] [decimal](3, 1) NULL,
 	[InstrumentalsRating] [decimal](3, 1) NULL,
-	[CompositionRating] [decimal](3, 1) NULL,
+	[StructureRating] [decimal](3, 1) NULL,
 	[Comment] [nvarchar](1500) NULL,
 	[CreatedOn] [datetime] NOT NULL,
 	[CreatedBy] [uniqueidentifier] NOT NULL,
