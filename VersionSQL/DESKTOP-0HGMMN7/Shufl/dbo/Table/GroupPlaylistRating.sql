@@ -5,7 +5,7 @@ SET QUOTED_IDENTIFIER ON
 CREATE TABLE [dbo].[GroupPlaylistRating](
 	[Id] [uniqueidentifier] NOT NULL,
 	[GroupPlaylistId] [uniqueidentifier] NOT NULL,
-	[Rating] [decimal](3, 1) NOT NULL,
+	[OverallRating] [decimal](3, 1) NOT NULL,
 	[Comment] [nvarchar](1500) NULL,
 	[CreatedOn] [datetime] NOT NULL,
 	[CreatedBy] [uniqueidentifier] NOT NULL,
