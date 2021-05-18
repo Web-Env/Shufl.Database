@@ -7,7 +7,7 @@ CREATE TABLE [dbo].[PlaylistImage](
 	[PlaylistId] [uniqueidentifier] NOT NULL,
 	[Width] [smallint] NOT NULL,
 	[Height] [smallint] NOT NULL,
-	[Uri] [char](40) NOT NULL,
+	[Url] [varchar](500) NOT NULL,
  CONSTRAINT [PK_PlaylistImage] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
