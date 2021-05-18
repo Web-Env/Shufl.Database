@@ -1,4 +1,4 @@
-/****** Object:  Table [dbo].[ArtistGenre]    Committed by VersionSQL https://www.versionsql.com ******/
+﻿/****** Object:  Table [dbo].[ArtistGenre]    Committed by VersionSQL https://www.versionsql.com ******/
 
 SET ANSI_NULLS ON
 SET QUOTED_IDENTIFIER ON
