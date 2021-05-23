@@ -7,7 +7,7 @@ CREATE TABLE [dbo].[UserImage](
 	[UserId] [uniqueidentifier] NOT NULL,
 	[Width] [smallint] NULL,
 	[Height] [smallint] NULL,
-	[Uri] [char](40) NOT NULL,
+	[Url] [varchar](500) NOT NULL,
  CONSTRAINT [PK_UserImage] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
