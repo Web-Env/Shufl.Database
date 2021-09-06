@@ -8,6 +8,7 @@ CREATE TABLE [dbo].[GroupAlbum](
 	[Identifier] [char](24) NOT NULL,
 	[IsRandom] [bit] NOT NULL,
 	[AlbumId] [uniqueidentifier] NOT NULL,
+	[RelatedGroupAlbumId] [uniqueidentifier] NULL,
 	[CreatedOn] [datetime] NOT NULL,
 	[CreatedBy] [uniqueidentifier] NOT NULL,
 	[LastUpdatedOn] [datetime] NOT NULL,
@@ -38,6 +39,9 @@ ALTER TABLE [dbo].[GroupAlbum] CHECK CONSTRAINT [FK_GroupAlbum_Album]
 ALTER TABLE [dbo].[GroupAlbum]  WITH CHECK ADD  CONSTRAINT [FK_GroupAlbum_Group] FOREIGN KEY([GroupId])
 REFERENCES [dbo].[Group] ([Id])
 ALTER TABLE [dbo].[GroupAlbum] CHECK CONSTRAINT [FK_GroupAlbum_Group]
+ALTER TABLE [dbo].[GroupAlbum]  WITH CHECK ADD  CONSTRAINT [FK_GroupAlbum_GroupAlbum] FOREIGN KEY([RelatedGroupAlbumId])
+REFERENCES [dbo].[GroupAlbum] ([Id])
+ALTER TABLE [dbo].[GroupAlbum] CHECK CONSTRAINT [FK_GroupAlbum_GroupAlbum]
 ALTER TABLE [dbo].[GroupAlbum]  WITH CHECK ADD  CONSTRAINT [FK_GroupAlbum_User_CreatedBy] FOREIGN KEY([CreatedBy])
 REFERENCES [dbo].[User] ([Id])
 ALTER TABLE [dbo].[GroupAlbum] CHECK CONSTRAINT [FK_GroupAlbum_User_CreatedBy]
