@@ -10,6 +10,6 @@ RETURNS varchar
 AS
 BEGIN
 
-	RETURN '1.4.0'
+	RETURN '1.5.0'
 
 END
